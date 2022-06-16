@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 etNumberTwo.error="Number is required"
                 return@setOnClickListener
             }
-            addition(num1.toInt(), num2.toInt())
+           addition(num1.toInt(), num2.toInt())
         }
 
         btnSubtract.setOnClickListener {
@@ -93,22 +93,23 @@ class MainActivity : AppCompatActivity() {
         var add = num1 + num2
         tvResults.text = add.toString()
 
+
     }
 
     fun Subtract(num1: Int, num2: Int) {
-        var add = num1 + num2
+        var add = num1 - num2
         tvResults.text = add.toString()
 
 
     }
 
     fun Multiply(num1: Int, num2: Int) {
-        var add = num1 + num2
+        var add = num1 * num2
         tvResults.text = add.toString()
     }
 
     fun Modulus(num1: Int, num2: Int) {
-        var add = num1 + num2
+        var add = num1 % num2
         tvResults.text = add.toString()
     }
 }
